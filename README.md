@@ -1,7 +1,7 @@
 #How to use the solution :#
 1. The solution is build on Laravel 4.2 PHP framework with MYSQL database
 2. To run the application unzip the code in webroot of your webserver
-3. Assuming the webroot url is http://localhost to run the application write http://localhost/public in the browser navigation bar
+3. Assuming the webroot url is http://localhost to run the application write http://localhost/public/home in the browser navigation bar
 4. The landing page has button “contact us” click the button and it will open contact us form
 5. Fill in the information and if all the validation checks are passed the data will be submitted to the backend
 6. The data is saved in the database and a mail is send to the email address configured in the code
