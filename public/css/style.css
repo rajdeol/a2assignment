@@ -1,0 +1,158 @@
+/* 
+    Author     : rajdeol
+*/
+body {
+    font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+.main-container{
+    margin:0 auto;
+    border: 1px solid #DADADA;
+    width: 900px;
+    padding: 0px 10px;
+}
+div.clear{
+    clear: both;
+}
+.greybox{
+    background-color: #DADADA;
+}
+.header-left-box{
+    width: 200px;    
+    float: left;
+}
+.header-right-box{
+    width: 300px;
+    float: right;
+}
+
+.header-right-box,.header-left-box{
+    height:30px;
+    margin-top: 10px;
+}
+.banner,.banner-div,.middle,.footer{
+    width: 100%;
+    height: 150px;
+}
+.banner-div{
+    margin-top: 10px;
+}
+.middle-left-div,.middle-right-div,.footer-left-div,.footer-right-div{
+    height: 150px;
+    margin-top: 10px;
+    float: left;
+}
+.middle-left-div,.footer-right-div{
+    width: 24.8%;
+}
+.middle-right-div,.footer-left-div{
+    width: 74%;
+}
+.middle-left-div,.footer-left-div{
+    margin-right: 10px;
+}
+// contact - form - styling
+.contact_form h2, .contact_form label {
+    font-family:Georgia, Times, "Times New Roman", serif;
+}
+.required_info {
+    font-size: 11px;
+    color:#d45252; 
+    margin:5px 0 0 0; 
+    display:inline;
+    float:right;
+}
+.contact_form h2 {
+    margin:0;
+    display: inline;
+}
+.contact_form ul {
+    width:420px;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+}
+.contact_form li{
+    padding:12px; 
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+.contact_form li:first-child, .contact_form li:last-child {
+    border-bottom:1px solid #777;
+}
+.contact_form label {
+    width:120px;
+    margin-top: 3px;
+    display:inline-block;
+    float:left;
+    padding:3px;
+}
+.contact_form input {
+    height:20px; 
+    width:220px; 
+    padding:5px 8px;
+}
+.contact_form select {
+    width:240px; 
+    height: 34px;
+    padding: 5px 8px;
+}
+.contact_form textarea {padding:8px; width:222px;}
+.contact_form button {margin-left:156px;}
+label.error{
+    color:red;
+    font-size:12px;
+    float: right;
+}
+// modal - styles
+#overlay {
+    position:fixed; 
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+}
+
+#modal {
+    position:absolute;
+    background:url(tint20.png) 0 0 repeat;
+    background:rgba(0,0,0,0.2);
+    border-radius:14px;
+    padding:8px;
+}
+
+#content {
+    border-radius:8px;
+    background:#fff;
+    padding:5px;
+}
+
+#close {
+    position:absolute;
+    background:url(close.png) 0 0 no-repeat;
+    width:24px;
+    height:27px;
+    display:block;
+    text-indent:-9999px;
+    top:-7px;
+    right:-7px;
+}
+
+// responsive layout
+@media(max-width:900px){
+    .main-container{
+        width: auto;
+    }
+    .middle-left-div,.middle-right-div,.footer-left-div,.footer-right-div{
+       width:100%;
+       margin:10px auto;
+    }
+    .header-left-box,.header-right-box{
+        float: none;
+        margin:10px auto;
+    }
+    
+}
