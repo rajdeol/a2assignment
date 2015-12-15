@@ -1,4 +1,4 @@
-How to use the solution :
+#How to use the solution :#
 1. The solution is build on Laravel 4.2 PHP framework with MYSQL database
 2. To run the application unzip the code in webroot of your webserver
 3. Assuming the webroot url is http://localhost to run the application write http://localhost/public in the browser navigation bar
@@ -8,7 +8,7 @@ How to use the solution :
 7. All the submitted data can be retrieved from database.
 8. Data is saved in table “contact_us”
 
-How to install and configure the solution :
+#How to install and configure the solution :#
 1. This solution requires a database and a table in the database to work.
 2. If you have access to command line tool and can run commands then this can easily be done by using Laravel Migration. Database migration for the table is already placed in app/database/migrations/ 
 3. If you do not want to use command line tool then you have to create the required table in database following is the SQL command to use: 
@@ -26,7 +26,7 @@ CREATE TABLE `contact_us` (
 4. Once the table is created configure the database details in app/config/database.php starting from line- 56
 5. As this application is developed using Laravel Please ensure the steps mentioned on the following link are done : http://laravel.com/docs/4.2
 
-How to configure SMTP to receive emails:
+#How to configure SMTP to receive emails:#
 1. To receive enquiry form data via emails you need to configure SMTP details in the config file
 2. Update app/config/mail.php with SMTP server details. 
 3. If you want to use gmail to send mails then update the details in the code below (your_gmail_username, your_gmail_password) and replace the content of the file with it:
@@ -45,7 +45,7 @@ How to configure SMTP to receive emails:
 4. After the above steps open file app/controllers/HomeController.php and uncomment the code from line 45 till line 50
 The recipient email address is defined in file : app/config/contact.php you can update the recipient email address from there.
 
-Security Considerations:
+#Security Considerations:#
 1. CSRF tokens are used to prevent cross-site request forgeries
 2. Laravel Eloquent ORM is used to prevent SQL-injections
 3. Form submissions are only accepted via POST method on server
